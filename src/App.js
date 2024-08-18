@@ -3,14 +3,8 @@ import SearchIcon from './search.svg';
 import './App.css';
 import MovieCard from './MovieCard';
 
-const API_URL = 'http://www.omdbapi.com?apikey=ebfcd91f';
-const movie1 = {
-    "Title": "Spiderman",
-    "Year": "2010",
-    "imdbID": "tt1785572",
-    "Type": "movie",
-    "Poster": "N/A"
-}
+const API_URL = 'https://www.omdbapi.com?apikey=ebfcd91f';
+
 
 const App = () => {
 
@@ -21,6 +15,7 @@ const App = () => {
     const response = await fetch(`${API_URL}&s=${title}`);
     const data = await response.json();
     setMovies(data.Search);
+    console.log(data.Search);
   }
 
   useEffect(() => {
