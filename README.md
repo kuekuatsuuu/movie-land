@@ -50,7 +50,7 @@ MovieLand is a sleek and interactive web app that allows users to search and exp
 ### Steps
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/movieland.git
+   git clone https://github.com/kuekuatsuuu/movieland.git
    ```
 2. Navigate to the project directory:
    ```bash
